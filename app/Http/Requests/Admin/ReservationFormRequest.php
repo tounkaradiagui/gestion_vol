@@ -37,6 +37,12 @@ class ReservationFormRequest extends FormRequest
                     'max:100'
                 ],
 
+                'num_piece' => [
+                    'required',
+                    'string',
+                    'max:100'
+                ],
+
                 'sexe' => [
                     'required'
                 ],

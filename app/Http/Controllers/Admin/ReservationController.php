@@ -31,6 +31,7 @@ class ReservationController extends Controller
         $reservation = new Reservation;
         $reservation->nom = $data['nom'];
         $reservation->prenom = $data['prenom'];
+        $reservation->num_piece = $data['num_piece'];
         $reservation->sexe = $data['sexe'];
         $reservation->classe = $data['classe'];
         $reservation->code_vol = $data['code_vol'];
@@ -41,9 +42,9 @@ class ReservationController extends Controller
     
     }
 
-    public function destroyy($reservation_id)
+    public function destroyy(Request $request)
     {
-        $reservation = Reservation::find($reservation_id);
+        $reservation = Reservation::find($request->reservation_delete_id);
         if($reservation)
         {
             $reservation->delete();

@@ -37,6 +37,11 @@
                 </div>
 
                 <div class="mb-3">
+                    <label for="">Numéro de pièce</label>
+                    <input type="text" name="num_piece" id="" class="form-control">
+                </div>
+
+                <div class="mb-3">
                     <label for="">Sexe</label>
                     <select name="sexe" id="" class="form-control">
                         <option value="">------Choisir sexe--------</option>

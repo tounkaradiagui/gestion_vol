@@ -14,6 +14,7 @@ class vol extends Model
     protected $fillable = [
         'code_vol',
         'date_depart',
+        'heure_depart',
         'destination',
         'Nb_places_A',
         'Nb_places_B',

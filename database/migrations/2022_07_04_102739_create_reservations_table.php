@@ -17,6 +17,7 @@ class CreateReservationsTable extends Migration
             $table->id();
             $table->string('nom');
             $table->string('prenom');
+            $table->string('num_piece');
             $table->string('sexe');
             $table->string('classe');
             $table->unsignedBigInteger("code_vol");

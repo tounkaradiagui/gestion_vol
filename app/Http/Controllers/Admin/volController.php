@@ -29,6 +29,7 @@ class volController extends Controller
         $vol = new vol;
         $vol->code_vol = $data['code_vol'];
         $vol->date_depart = $data['date_depart'];
+        $vol->heure_depart = $data['heure_depart'];
         $vol->destination = $data['destination'];
         $vol->Nb_places_A = $request['Nb_places_A'];
         $vol->Nb_places_B = $request['Nb_places_B'];
@@ -54,6 +55,7 @@ class volController extends Controller
         $vol = vol::find($vol_id);
         $vol->code_vol = $data['code_vol'];
         $vol->date_depart = $data['date_depart'];
+        $vol->heure_depart = $data['heure_depart'];
         $vol->destination = $data['destination'];
         $vol->Nb_places_A = $request['Nb_places_A'];
         $vol->Nb_places_B = $request['Nb_places_B'];
@@ -67,13 +69,13 @@ class volController extends Controller
 
     }
 
-    public function destroy($vol_id)
+    public function destroy(Request $request)
     {
-        $vol = vol::find($vol_id);
+        $vol = vol::find($request->vol_delete_id);
         if($vol)
         {
             $vol->delete();
-            return redirect('admin/vol')->with('message', 'Vol supprimé avec succès');
+            return redirect('admin/vol')->with('message', 'Le vol a été supprimer');
 
         }
         else
@@ -81,6 +83,13 @@ class volController extends Controller
             return redirect('admin/vol')->with('message', 'Aucun vol trouvé');
 
         }
+    }
+
+    public function show($vol_id)
+    {
+       
+        $lastsone = vol::findOrFail($vol_id);
+        return view('admin.vol.show', compact('lastsone'));
     }
 
 

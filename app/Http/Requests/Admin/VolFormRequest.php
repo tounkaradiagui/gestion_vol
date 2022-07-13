@@ -36,6 +36,12 @@ class VolFormRequest extends FormRequest
                 
             ],
 
+            'heure_depart' => [
+                'required',
+                'string'
+                
+            ],
+
             'destination' => [
                 'required',
                 'string',

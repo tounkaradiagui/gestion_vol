@@ -148,21 +148,21 @@
 
                 
                 <!-- Navbar brand -->
-                <a class="navbar-brand me-2" href="https://mdbgo.com/">
+                <a class="navbar-brand me-2" href="#">
                     <img src="{{asset('assets/images/plane.png')}}" height="30" alt="" loading="lazy" style="margin-top: -1px" />
                 </a>
                             <!-- Left links -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link d-none d-lg-inline-block" href="https://mdbgo.com/" style="color: #fff;">Home</a>
+                        <a class="nav-link d-none d-lg-inline-block" href="#" style="color: #fff;">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-none d-lg-inline-block" href="https://mdbgo.com/getting-started/" style="color: #fff;">Get started</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-none d-lg-inline-block" href="https://mdbgo.com/pricing/" style="color: #fff;">Pricing</a>
-                    </li>
+                   
+                    <style>
+                        a.px-3.mb-1.me-2.text-theme {
+                                text-decoration: none;
+                            }
+                    </style>
                     
                 </ul>
 
@@ -176,13 +176,9 @@
                         }
                     </style>
 
-                    <a type="button" class=" px-3 mb-1 me-2 text-theme" data-mdb-toggle="modal" data-mdb-target="#loginModal" style="color: #fff;">
-                        Login
-                    </a>
+                    <a type="button" href="{{ route('login') }}" class="  px-3 mb-1 me-2 text-theme"   style="color: #fff;">Connexion</a>
 
-                    <a type="button" class=" px-3 mb-1 me-2 text-theme" data-mdb-toggle="modal" data-mdb-target="#registerModal" style="color: #fff;">
-                        Sign up
-                    </a>
+                    
 
                     
                 </div>
@@ -207,7 +203,7 @@
 
                         <div class="col-md-6 mb-4 mb-md-0 d-flex align-items-center">
                             <div>
-                                <img src="{{asset('assets/images/gg.jpg')}}" alt="" height="400" width="600" alt="" loading="lazy" style="margin-top: -1px">
+                                <img src="{{asset('assets/images/F.jpg')}}" alt="" height="400" width="600" alt="" loading="lazy" style="margin-top: -1px">
                             </div>
                         </div>
 
@@ -226,30 +222,7 @@
 
                             <section class="l-guide-section _text-collection">
                                 <div class="l-guide-section__inner">
-                                    <div class="o-content ">
-
-                                        <p>Cet aéroport présente une architecture contemporaine qui peut accueillir jusqu’à 5 millions de passagers par an.</p>
-
-                                        <p>En moins d'une année, l’aéroport de DagDag a battu son record en enregistrant  près d'un millions de voyageurs.
-                                        </p>
-</p>
-                                      
-                                        <h2>Comment se rendre à Kayes depuis l’aéroport ?</h2>
-
-                                        <h3>Taxi</h3>
-
-                                        <p><strong>La manière la plus économique</strong> de se rendre à Kayes ville depuis l’aéroport est de prendre le <strong><a href="#">Taxi</a></strong>.
-                                         En 20 ou 30 minutes, vous arriverez en centre-ville en prenant la RN 12. Le trajet en taxi depuis l’aéroport jusqu’au centre-ville peut coûter aux alentours de <strong>25 <bdi>€</bdi> (26,30 <span><bdi>US$</bdi></span>).</strong></p>
-                                        
-                                        <h3>Service de transfert</h3>
-
-                                        <p>Il s’agit de l’option la plus pratique pour ceux qui ne souhaitent pas se compliquer. En réservant le service à l’aéroport, <strong>u</strong><strong>n chauffeur vous attendra dans le hall des arrivées de l’aéroport avec une pancarte portant votre nom</strong> et vous conduira à votre hôtel le plus vite possible. Vous pouvez <a href="/transferts" title="Transfert à Porto"><strong>réserver en ligne le service de transfert sur Visitons Porto</strong></a>. <strong>Le prix est semblable à celui du taxi</strong>.</p>
-
-                                        <h2>Un conseil</h2>
-
-                                        <p><strong>Si vous pensez acheter la <a href="/carte-porto-card" title="Carte Porto Card">Porto Card</a>, le mieux est de l’acheter à l’aéroport</strong>. Ainsi, vous pourrez l’utiliser pour de le trajet en métro ou en bus pour aller jusqu’en centre-ville. À partir du moment où vous la validez, vous pourrez l’utiliser pendant 24 heures.</p>
-
-                                    </div>   
+                                     
 
                                 </div>
                             </section>
@@ -257,11 +230,12 @@
 
                         </div>
 
-                            <div class="col-md-6">
+                        <div class="col-md-6">
 
 
 
-                            </div>
+                        </div>
+
                     </div>
 
 
@@ -291,7 +265,7 @@
                     </div>
                     <div class="col-md-4 mb-5">
                         <div class="card rounded-3">
-                            <a href="https://mdbgo.com/wordpress-shop/">
+                            <a href="#">
                                 <div class="card-body hover-shadow">
                                     <i class="fas fa-cart-plus fa-2x mb-3 text-theme"></i>
 
@@ -302,7 +276,7 @@
                     </div>
                     <div class="col-md-4 mb-5">
                         <div class="card rounded-3">
-                            <a href="https://mdbgo.com/wordpress-blog/" class="ripple">
+                            <a href="#" class="ripple">
                                 <div class="card-body hover-shadow">
                                     <i class="fas fa-pen-nib fa-2x mb-3 text-theme"></i>
 
@@ -335,7 +309,7 @@
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.1)">
 
                 © 2022 Copyright:
-                <a class="" href="https://mdbootstrap.com/"> <strong>Dag-Dag-airport.com</strong></a>
+                <a class="" href="#"> <strong>Agence-kingui.com</strong></a>
             </div>
             <!-- Fin copyright -->
 

@@ -17,6 +17,7 @@ class CreateVolsTable extends Migration
             $table->id();
             $table->string('code_vol');
             $table->date('date_depart');
+            $table->time('heure_depart');
             $table->string('destination');
             $table->integer('Nb_places_A');
             $table->integer('Nb_places_B');

@@ -14,6 +14,7 @@ class Reservation extends Model
     protected $fillable = [
         'nom',
         'prenom',
+        'num_piece',
         'sexe',
         'classe',
         'code_vol'

@@ -42,6 +42,11 @@
             </div>
 
             <div class="mb-3">
+                <label for="">Heure de Départ</label>
+                <input type="time" name="heure_depart" id="" class="form-control">
+            </div>
+
+            <div class="mb-3">
                 <label for="">Destination</label>
                 <input type="text" name="destination" id="" class="form-control">
             </div>

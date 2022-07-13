@@ -70,6 +70,10 @@
             $('#myDataTable').DataTable();
         });
     </script>
+
+    @yield('scripts')
+
+    @yield('scriptt')
        
 </body>
 </html>
