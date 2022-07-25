@@ -16,7 +16,7 @@
 
                     {{ __('Avant de proceder, merci de consulter votre email pour vérifier le lien.') }}
                     {{ __('Si vous navez pas reçu le lien par email') }},
-                    <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
+                    <form class="d-inline" method="POST" action="{{ route('admin.dashboard') }}">
                         @csrf
                         <button type="submit" class="btn btn-link p-0 m-0 align-baseline">{{ __('Cliquez ici pour demander un autre') }}</button>.
                     </form>
