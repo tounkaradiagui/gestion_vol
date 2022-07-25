@@ -22,5 +22,5 @@ class AdminMiddleware
             return redirect('/home')->with('status', 'Accès refusé. Vous n etes pas Admin');
         }
         return $next($request);
-    }    
+    }
 }
