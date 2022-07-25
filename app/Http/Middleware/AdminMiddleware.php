@@ -18,7 +18,7 @@ class AdminMiddleware
     public function handle(Request $request, Closure $next)
     {
 
-        if(!Auth::user()->role_as == '0'){
+        if(!Auth::user()->role_as == '1'){
             return redirect('/home')->with('status', 'Accès refusé. Vous n etes pas Admin');
         }
         return $next($request);
