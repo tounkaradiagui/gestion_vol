@@ -1,77 +1,75 @@
-@extends('layouts.app')
+@extends('layouts.frontend')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Inscription') }}</div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Nom') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Adresse Email ') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Mot de passe') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirmer mot de passe') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Inscription') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+<!-- Breadcrumb Area Start -->
+    <section class="peulis-breadcrumb-area">
+        <div class="breadcrumb-top">
+            <div class="container">
+               <div class="col-lg-12">
+                  <div class="breadcrumb-box">
+                     <h2>Inscription</h2>
+                      <ul class="breadcrumb-inn">
+                        <li><a href="{{url('/')}}">Accueil</a></li>
+                        <li class="active"><a href="{{route('register')}}">Inscription</a></li>
+                      </ul>
+                  </div>
+               </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
+      <!-- Breadcrumb Area End -->
+       
+       
+      <!-- Login Page Start -->
+    <section class="peulis-login-page section_70">
+        <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                    <div class="login-box">
+                        <h3>Créer un compte!</h3>
+                        <form>
+                            <p>
+                            <input type="text" placeholder="Username" />
+                            <i class="fa fa-user"></i>
+                            </p>
+
+                            <p>
+                            <input type="email" placeholder="E-mail Address" />
+                            <i class="fa fa-envelope"></i>
+                            </p>
+
+                            <p>
+                            <input type="password" placeholder="Password" />
+                            <i class="fa fa-lock"></i>
+                            </p>
+
+                            <p>
+                            <input type="password" placeholder="Repeat Password" />
+                            <i class="fa fa-lock"></i>
+                            </p>
+
+                            <p class="register_action">
+                            <button type="submit" >Register</button>
+                            </p>
+
+                        </form>
+                            <!-- <div class="social-login">
+                                <p class="optional_login">or</p>
+                                <a href="#" class="fb">
+                                <i class="fa fa-facebook"></i>Sign Up <span>Facebook</span>
+                                </a>
+                                <a href="#" class="google">
+                                <i class="fa fa-google"></i>Sign Up <span>Google</span>
+                                </a>
+                            </div> -->
+                        <div class="register_have">
+                            <p>Avez-vous déjà un compte ? <a href="{{route('login')}}">Connectez-vous ici !</a></p>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </section>
+      <!-- Login Page End -->
 @endsection
