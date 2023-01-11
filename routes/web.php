@@ -5,6 +5,7 @@ use App\Models\Reservation as ModelsReservation;
 use GuzzleHttp\Promise\Create;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Models\User;
 
 
 

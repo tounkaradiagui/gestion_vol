@@ -58,7 +58,7 @@
                         </a>
                      </div> -->
                      <div class="register_have">
-                        <p>Vous n'avez pas de compte ? <a href="{{route('register')}}">Incrivez-vous</a></p>
+                        <p>Vous n'avez pas de compte ? <a href="{{route('register')}}">Inscrivez-vous</a></p>
                      </div>
                   </div>
                </div>

@@ -38,7 +38,8 @@
                                             <li><a href="{{ route('register') }}">Inscription</a></li>
                                         @endif
                                     @else
-                                        <li><a href="">{{ Auth::user()->name }}</a></li>
+                                        <li><a href="{{ route('home')}}">{{ Auth::user()->name }}</a></li>
+                                        <li><a href="{{ route('home')}}" >Dashboard</a> </li>
                                     @endguest
                                 </ul>
                             </div>
@@ -59,7 +60,7 @@
                                 <div class="col-lg-3">
                                     <div class="site-logo">
                                         <a href="">
-                                            <img src="assets/img/logo.png" alt="Peulis" />
+                                            <img src="{{asset('assets/images/logo.png')}}" alt="Peulis" />
                                         </a>
                                     </div>
                                     <!-- Responsive Menu Start -->
@@ -149,7 +150,7 @@
                                                             <i class="fa fa-times"></i>
                                                         </a>
                                                         <div class="cart-pro-image">
-                                                            <img src="assets/img/cart-1.png" alt="cart" />
+                                                            <img src="{{asset('assets/images/C.jpg')}}" alt="cart" />
                                                         </div>
                                                         <div class="cart-pro-info">
                                                             <a href="#">
@@ -164,7 +165,7 @@
                                                             <i class="fa fa-times"></i>
                                                         </a>
                                                         <div class="cart-pro-image">
-                                                            <img src="assets/img/cart-1.png" alt="cart" />
+                                                            <img src="{{asset('assets/images/D.jpg')}}" alt="cart" />
                                                         </div>
                                                         <div class="cart-pro-info">
                                                             <a href="#">

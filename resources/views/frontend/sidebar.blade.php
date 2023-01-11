@@ -2,7 +2,7 @@
     <!-- Sidebar Navigation Start -->
     <div class="ct-sidenav">
         <button class="close"><i class="fa fa-times"></i></button>
-        <img src="assets/img/logo.png" alt="Site Logo" />
+        <img src="{{asset('assets/images/logo.png')}}" alt="Site Logo" />
         <div class="sidenav-info">
             <p>Lorem Ipsum is simply dummied text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since when an unknown printer took a galley of type and scrambled it to make a type specimen book.printing and typesetting industry It has survived not only five centuries.</p>
             <ul class="sidenav-contact-info">

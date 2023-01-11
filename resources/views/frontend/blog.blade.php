@@ -15,7 +15,7 @@
                     <div class="single-promo-package">
                         <div class="promo-package-img">
                             <a href="#">
-                                <img src="assets/imges/B.jpg" alt="Promo Packages" />
+                                <img src="{{asset('assets/imges/B.jpg')}}" alt="Promo Packages" />
                             </a>
                         </div>
                         <div class="promo-package-desc">

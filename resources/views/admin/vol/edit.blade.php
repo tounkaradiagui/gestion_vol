@@ -40,12 +40,12 @@
 
             <div class="mb-3">
                 <label for="">Date de Départ</label>
-                <input type="time" name="date_depart" id="" value="{{$vol->date_depart}}" class="form-control">
+                <input type="date" name="date_depart" id="" value="{{$vol->date_depart}}" class="form-control">
             </div>
 
             <div class="mb-3">
                 <label for="">Heure de Départ</label>
-                <input type="date" name="heure_depart" id="" value="{{$vol->heure_depart}}" class="form-control">
+                <input type="time" name="heure_depart" id="" value="{{$vol->heure_depart}}" class="form-control">
             </div>
 
             <div class="mb-3">

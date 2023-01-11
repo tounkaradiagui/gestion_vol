@@ -20,4 +20,9 @@ class Reservation extends Model
         'code_vol'
     ];
 
+    public function vols()
+    {
+        return $this->belongsTo(Vol::class, 'code_vol', 'id');
+    }
+
 }

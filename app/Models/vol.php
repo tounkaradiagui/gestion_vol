@@ -21,4 +21,9 @@ class vol extends Model
         'prix_classe_A',
         'prix_classe_B'
     ];
+
+    public function reservation()
+    {
+        return $this->hasMany(Reservation::class, 'code_vol', 'id');
+    }
 }

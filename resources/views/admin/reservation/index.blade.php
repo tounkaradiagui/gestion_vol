@@ -67,7 +67,7 @@
                             <td>{{ $item->num_piece }}</td>
                             <td>{{ $item->sexe }}</td>
                             <td>{{ $item->classe }}</td>
-                            <td>{{ $item->code_vol }}</td>
+                            <td>{{ $item->vols->code_vol }}</td>
                             <td>
                                 <!-- <a href="{{url('admin/delete-reservation/'.$item->id)}}" class="btn btn-danger btn-sm" >Supprimer</a> -->
                                 <button type="submit" class="btn btn-danger btn-sm deletereservationBtn" value="{{$item->id}}" >Supprimer</button>

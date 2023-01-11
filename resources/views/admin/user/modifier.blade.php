@@ -22,17 +22,17 @@
             
             <div class="mb-3">
                 <label for="">Nom complet</label>
-                <p class="form-control">{{ $user->name }}</p>
+                <input class="form-control" type="text" name="name" value="{{ $user->name }}">
             </div>
             
             <div class="mb-3">
-                <label for="">Nom complet</label>
-                <p class="form-control">{{ $user->email }}</p>
+                <label for="">Adresse email</label>
+                <input class="form-control" type="text" name="email" value="{{ $user->email }}">
             </div>
 
             <div class="mb-3">
                 <label for="">Créer le</label>
-                <p class="form-control">{{ $user->created_at->format('d/m/Y') }}</p>
+                <input class="form-control" type="text" name="created_at" value="{{ $user->created_at->format('d/m/y') }}">
             </div>
 
             <form action="{{url('admin/update-user/' .$user->id)}}" method="post">

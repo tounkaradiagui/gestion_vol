@@ -28,41 +28,42 @@
                <div class="col-lg-12">
                     <div class="login-box">
                         <h3>Créer un compte!</h3>
-                        <form>
+                        <form method="POST" action="{{ route('register') }}">
+                            @csrf
                             <p>
-                            <input type="text" placeholder="Username" />
+                            <input type="text" placeholder="Nom complet" name="name" />
                             <i class="fa fa-user"></i>
                             </p>
 
                             <p>
-                            <input type="email" placeholder="E-mail Address" />
+                            <input type="email" placeholder="Adresse email" name="email" />
                             <i class="fa fa-envelope"></i>
                             </p>
 
                             <p>
-                            <input type="password" placeholder="Password" />
+                            <input type="password" placeholder="Mot de passe" name="password" />
                             <i class="fa fa-lock"></i>
                             </p>
 
                             <p>
-                            <input type="password" placeholder="Repeat Password" />
+                            <input type="password" placeholder="Répeter le mot de passe" name="password_confirmation" />
                             <i class="fa fa-lock"></i>
                             </p>
 
                             <p class="register_action">
-                            <button type="submit" >Register</button>
+                            <button type="submit" >Inscrire</button>
                             </p>
 
                         </form>
-                            <!-- <div class="social-login">
+                            <div class="social-login">
                                 <p class="optional_login">or</p>
                                 <a href="#" class="fb">
-                                <i class="fa fa-facebook"></i>Sign Up <span>Facebook</span>
+                                <i class="fa fa-facebook"></i>Inscription avec <span>Facebook</span>
                                 </a>
                                 <a href="#" class="google">
-                                <i class="fa fa-google"></i>Sign Up <span>Google</span>
+                                <i class="fa fa-google"></i>Inscription avec<span>Google</span>
                                 </a>
-                            </div> -->
+                            </div>
                         <div class="register_have">
                             <p>Avez-vous déjà un compte ? <a href="{{route('login')}}">Connectez-vous ici !</a></p>
                         </div>

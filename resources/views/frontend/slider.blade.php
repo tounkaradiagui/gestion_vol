@@ -2,10 +2,14 @@
     <section class="peulis-slider-area overlay">
         <div class="peulis-slide owl-carousel">
             <div class="slider-container slider-1">
-                <div class="single-slider zoom"></div>
+                <div class="">
+                <img src="{{asset('assets/images/D.jpg')}}" alt="Test" />
+                </div>
             </div>
             <div class="slider-container slider-2">
-                <div class="single-slider zoom"></div>
+                <div>
+                    <img src="{{asset('assets/images/C.jpg')}}" alt="Test" />
+                </div>
             </div>
         </div>
 
