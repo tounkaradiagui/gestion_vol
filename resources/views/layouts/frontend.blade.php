@@ -58,7 +58,7 @@
     </div>
     <!--Preloader End-->
 
-    @include('frontend.header')
+    @include('frontend.common.header')
 
     @yield('content')
     

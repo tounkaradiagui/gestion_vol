@@ -42,6 +42,8 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function() {
     Route::get('users', [App\Http\Controllers\Admin\UserController::class, 'index']);
     Route::get('users/{user_id}', [App\Http\Controllers\Admin\UserController::class, 'modifier']);
     Route::put('update-user/{user_id}', [App\Http\Controllers\Admin\UserController::class, 'update']);
-
+    
 });
 
+
+Route::get('/booking', [App\Http\Controllers\Frontend\BookingController::class, 'index'])->name('booking.index');

@@ -72,9 +72,10 @@
                                         <nav>
                                             <ul id="navigation_menu">
                                                 <li class="active"><a href="">Accueil</a></li>
-                                                <li ><a href="">Réservation</a></li>
+                                                <li ><a href="{{url('/booking')}}">Réservation</a></li>
+                                                <li ><a href="">Enregistrement</a></li>
+                                                <li ><a href="">Gérer mes voyages</a></li>
                                                 <li><a href="">Contact</a></li>
-                                                <li ><a href="">A Propos</a></li>
                                                 <!-- <li>
                                                     <a href="#">Pages</a>
                                                     <ul>
@@ -87,14 +88,14 @@
                                                         <li><a href="404.html">404 Notfound</a></li>
                                                     </ul>
                                                 </li> -->
-                                                <li>
+                                                <!-- <li>
                                                     <a href="#">Destinations</a>
                                                     <ul>
                                                         <li><a href="">New York</a></li>
                                                         <li><a href="">Toulouse</a></li>
                                                         <li><a href="">Kuwait</a></li>
                                                     </ul>
-                                                </li>
+                                                </li> -->
                                                 <!-- <li>
                                                     <a href="#">tours</a>
                                                     <ul>
